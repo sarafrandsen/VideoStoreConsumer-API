@@ -10,5 +10,6 @@ JSON.parse(File.read('db/seeds/movies.json')).each do |movie_data|
   puts "#{movie_data['inventory']} = Movie data inventory"
   puts movie_data["inventory"]
   movies.first.inventory = movie_data["inventory"]
+
   movies.first.save unless movies.empty?
 end

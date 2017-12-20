@@ -60,6 +60,8 @@ group :development do
   gem 'pry-rails'
 
   gem 'dotenv-rails'
+
+  gem 'rack-cors'
 end
 
 group :test do
